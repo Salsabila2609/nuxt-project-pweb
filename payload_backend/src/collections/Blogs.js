@@ -1,4 +1,5 @@
 /** @type {import('payload/types').CollectionConfig} */
+import payload from 'payload';
 const Blogs = {
   slug: "Blogs",
   access: {
@@ -6,6 +7,43 @@ const Blogs = {
     update: () => true,
     delete: () => true,
     create: () => true
+  },
+  hooks: {
+    afterOperation: [
+      async (args) => {
+        if (args.operation === "create") {
+          payload.create({
+            collection: "log",
+            data: {
+              collectionName: "Blogs",
+              action: "create",
+              timestamp: new Date(),
+              Blogs: args.result.id,
+            },
+          });
+        } else if (args.operation === "deleteByID") {
+          payload.create({
+            collection: "log",
+            data: {
+              collectionName: "Blogs",
+              action: "delete",
+              timestamp: new Date(),
+              Blogs: args.result.id,
+            },
+          });
+        } else if (args.operation === "updateByID") {
+          payload.create({
+            collection: "log",
+            data: {
+              collectionName: "Blogs",
+              action: "update",
+              timestamp: new Date(),
+              Blogs: args.result.id,
+            },
+          });
+        }
+      },
+    ],
   },
   fields: [
     {
