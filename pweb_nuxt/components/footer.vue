@@ -4,7 +4,7 @@
 
     <div class="box" data-aos="fade-up" data-aos-delay="150">
         <a href="#" class="logo"> <span>T</span>ravel <span>W</span>arrior </a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ad?</p>
+        <p>Embark on a journey of a lifetime with Travel Warrior, your trusted companion in exploring the world's wonders. Join us as we share captivating stories, insider tips, and the joy of wanderlust.</p>
         <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -17,16 +17,14 @@
         <h3>quick links</h3>
         <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
         <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
-        <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> destination </a>
-        <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
         <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
         <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
     </div>
 
     <div class="box" data-aos="fade-up" data-aos-delay="450">
         <h3>contact info</h3>
-        <p> <i class="fas fa-map"></i> Delhi, india </p>
-        <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+        <p> <i class="fas fa-map"></i> Surabaya, Indonesia </p>
+        <p> <i class="fas fa-phone"></i> +62-123-456-789 </p>
         <p> <i class="fas fa-envelope"></i> travelwarrior@mail.com </p>
         <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
     </div>
