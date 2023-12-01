@@ -9,6 +9,7 @@ import Users from './collections/Users'
 import Blogs from './collections/Blogs'
 import Images from './collections/images'
 import submitForm from './collections/submitForm'
+import log from "./collections/log";
 
 
 export default buildConfig({
@@ -18,7 +19,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Blogs, Images, submitForm],
+  collections: [Users, Blogs, Images, submitForm, log],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },

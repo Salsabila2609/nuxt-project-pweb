@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@pinia/nuxt'],
+
+  pinia: {
+    autoImports: [
+      'defineStore', 
+      ['defineStore', 'definePiniaStore'],
+    ],
+  },
 
   ssr: false,
 

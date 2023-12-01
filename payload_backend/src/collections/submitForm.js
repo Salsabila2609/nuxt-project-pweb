@@ -1,4 +1,5 @@
 /** @type {import('payload/types').CollectionConfig} */
+import payload from 'payload';
 const submitForm = {
     slug: "submitForm",
     access: {
@@ -6,6 +7,43 @@ const submitForm = {
       update: () => true,
       delete: () => true,
       create: () => true
+    },
+    hooks: {
+      afterOperation: [
+        async (args) => {
+          if (args.operation == "create") {
+            payload.create({
+              collection: "log",
+              data: {
+                collectionName: "submitForm",
+                action: "create",
+                timestamp: new Date(),
+                submitForm: args.result.id,
+              },
+            });
+          } else if (args.operation == "delete") {
+            payload.create({
+              collection: "log",
+              data: {
+                collectionName: "submitForm",
+                action: "delete",
+                timestamp: new Date(),
+                submitForm: args.result.id,
+              },
+            });
+          } else if (args.operation == "updateByID") {
+            payload.create({
+              collection: "log",
+              data: {
+                collectionName: "submitForm",
+                action: "update",
+                timestamp: new Date(),
+                submitForm: args.result.id,
+              },
+            });
+          }
+        },
+      ],
     },
     fields: [
       {
