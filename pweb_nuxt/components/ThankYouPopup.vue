@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     closeThankYouPopup() {
-      this.$emit('closePopup');
+      this.$emit("closePopup");
     },
   },
 };
@@ -40,22 +40,22 @@ export default {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px; 
+  max-width: 400px;
   width: 90%;
 }
 
 h2 {
-  color: #d9296f; 
+  color: #d9296f;
 }
 
 p {
-  color: #555; 
+  color: #555;
   margin-bottom: 15px;
 }
 
 button {
-  background-color: #d9296f; 
-  color: #fff; 
+  background-color: #d9296f;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
