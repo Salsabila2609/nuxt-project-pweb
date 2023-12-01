@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxt/http', '@nuxt/content'],
+  modules: ['@nuxt/content'],
 
   ssr: false,
 
