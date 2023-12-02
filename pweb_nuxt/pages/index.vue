@@ -2,8 +2,6 @@
   <div>
     <navbar></navbar>
 
-    <!-- home section starts  -->
-
     <section class="home" id="home">
       <div class="content">
         <span data-aos="fade-up" data-aos-delay="150">Let's Start</span>
@@ -11,10 +9,6 @@
         <p data-aos="fade-up" data-aos-delay="450">Explore Wiser, Wander Farther, Spend Smarter. Uncover Your Next Destination, Where to Next</p>
       </div>
     </section>
-
-    <!-- home section ends -->
-
-    <!-- booking form section starts  -->
 
     <section class="book-form" id="book-form">
       <form action="">
@@ -33,10 +27,6 @@
         <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="find now" class="btn" />
       </form>
     </section>
-
-    <!-- booking form section ends -->
-
-    <!-- about section starts  -->
 
     <section class="about" id="about">
       <div class="video-container" data-aos="fade-right" data-aos-delay="300">
@@ -170,10 +160,6 @@
       </div>
     </section>
 
-    <!-- review section ends -->
-
-    <!-- banner section starts  -->
-
     <div class="banner">
       <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
         <span>start your adventures</span>
@@ -182,10 +168,6 @@
         <a href="#book-form" class="btn">book now</a>
       </div>
     </div>
-
-    <!-- banner section ends -->
-
-    <!-- blogs section starts  -->
 
     <section class="blogs" id="blogs">
       <div class="heading">
@@ -237,12 +219,7 @@
         </div>
       </div>
     </section>
-
-    <!-- blogs section ends -->
-
-    <!-- footer section ends -->
     <Footer></Footer>
-    <!-- Use the Footer component here -->
   </div>
 </template>
 
@@ -263,7 +240,6 @@ export default {
   },
 
   mounted() {
-    // Inisialisasi AOS saat layout dimuat
     this.initAOS();
     let navbar = document.querySelector(".header .navbar");
 
@@ -285,7 +261,6 @@ export default {
   methods: {
     initAOS() {
       if (process.client) {
-        // Pastikan script hanya dijalankan di sisi klien
         import("aos").then((AOS) => {
           AOS.init({
             duration: 800,
@@ -301,5 +276,4 @@ export default {
 <style scoped>
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css";
-/* Add any page-specific styles here */
 </style>

@@ -9,7 +9,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -52,6 +51,11 @@ section {
   margin-bottom: 2rem;
 }
 
+.heading-blogdetail {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
 .heading span {
   color: #d9296f;
   font-size: 2rem;
@@ -67,8 +71,18 @@ section {
   font-size: 2rem;
 }
 
+.heading-blogdetail span {
+  color: #d9296f;
+  font-size: 3rem;
+}
+
 .heading-about h1 {
   font-size: 4rem;
+  color: #000;
+}
+
+.heading-blogdetail h1 {
+  font-size: 5rem;
   color: #000;
 }
 
@@ -369,11 +383,9 @@ section {
   background: #d9296f;
 }
 
-.about .content {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 42rem;
-  flex: 1 1 42rem;
-  margin-bottom: 5rem;
+.about-page .content span {
+  color: #d9296f;
+  font-size: 2rem;
 }
 
 .about-page .content {
@@ -383,33 +395,10 @@ section {
   margin-bottom: 0rem;
 }
 
-.about .content span {
-  color: #d9296f;
-  font-size: 2rem;
-}
-
-.about-page .content span {
-  color: #d9296f;
-  font-size: 2rem;
-}
-
-.about .content h3 {
-  color: #000;
-  font-size: 4rem;
-  margin-top: 0.5rem;
-}
-
 .about-page .content h3 {
   color: #000;
   font-size: 4rem;
   margin-top: 0.5rem;
-}
-
-.about .content p {
-  padding: 1rem 0;
-  font-size: 1.4rem;
-  color: #3d3d3d;
-  line-height: 2;
 }
 
 .about-page .content p {
@@ -423,6 +412,126 @@ section {
   color: #000;
   font-size: 4rem;
   margin-top: 0.5rem;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.about .content span {
+  color: #d9296f;
+  font-size: 2rem;
+}
+
+.about .content h3 {
+  color: #000;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+
+.about .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  line-height: 2;
+}
+
+.about .video-container video {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.blogdetail {
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+  margin-top: 10rem;
+  padding-inline: 51rem;
+}
+
+.blogdetail .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+
+.blogdetail .back {
+  cursor: pointer;
+}
+
+.blogdetail .back p:hover {
+  color: #d9296f;
+}
+
+.blogdetail .back i:hover {
+  color: #d9296f;
+}
+
+.blogdetail .back p {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.blogdetail .back p i {
+  padding-right: 0.7rem;
+  color: #000;
+}
+
+.blogdetail .content span {
+  color: #d9296f;
+  font-size: 2rem;
+}
+
+.blogdetail .content h1 {
+  color: #000;
+  font-size: 5rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.blogdetail .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #3d3d3d;
+  line-height: 2;
+  text-align: justify;
+}
+
+.blogdetail .content .icon {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  gap: 2rem;
+}
+
+.blogdetail .content .icon p {
+  font-size: 1.4rem;
+  color: #3d3d3d;
+}
+
+.blogdetail .content .icon p i {
+  padding-right: 0.7rem;
+  color: #d9296f;
+}
+
+.blogdetail .content .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .services .box-container {
@@ -756,7 +865,6 @@ section {
 .blogs .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
@@ -809,6 +917,11 @@ section {
   font-size: 1.4rem;
   color: #3d3d3d;
   line-height: 2;
+}
+
+.blogs .box-container .box .content h1 {
+  font-size: 3rem;
+  color: #d9296f;
 }
 
 .blogs .box-container .box .content .icon {
@@ -1006,6 +1119,10 @@ section {
 
   .about .content h3 {
     font-size: 3.5rem;
+  }
+
+  .blogdetail .content h3 {
+    font-size: 4.5rem;
   }
 
   .banner .content h3 {

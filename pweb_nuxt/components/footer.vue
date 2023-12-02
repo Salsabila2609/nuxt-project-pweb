@@ -1,7 +1,7 @@
 <template>
   <section class="footer">
     <div class="box-container">
-      <div class="box" data-aos="fade-up" data-aos-delay="150">
+      <div class="box">
         <a href="#" class="logo"> <span>T</span>ravel <span>W</span>arrior </a>
         <p>Embark on a journey of a lifetime with Travel Warrior, your trusted companion in exploring the world's wonders. Join us as we share captivating stories, insider tips, and the joy of wanderlust.</p>
         <div class="share">
@@ -12,14 +12,14 @@
         </div>
       </div>
 
-      <div class="box" data-aos="fade-up" data-aos-delay="300">
+      <div class="box">
         <h3>quick links</h3>
         <a href="/" class="links"> <i class="fas fa-arrow-right"></i> home </a>
         <a href="/about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
         <a href="/blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
       </div>
 
-      <div class="box" data-aos="fade-up" data-aos-delay="450">
+      <div class="box">
         <h3>contact info</h3>
         <p><i class="fas fa-map"></i> Surabaya, Indonesia</p>
         <p><i class="fas fa-phone"></i> +62-123-456-789</p>
@@ -27,7 +27,7 @@
         <p><i class="fas fa-clock"></i> 7:00am - 10:00pm</p>
       </div>
 
-      <div class="box" data-aos="fade-up" data-aos-delay="600">
+      <div class="box">
         <h3>newsletter</h3>
         <p>subscribe for latest updates</p>
         <form action="">
